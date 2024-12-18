@@ -7,6 +7,7 @@
     <title>{MG} - Web Profesional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="mg.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
    
@@ -18,10 +19,10 @@
         <label for="check" class="mostrar-menu">&#8801;</label>
         <nav class="menu">
             <a href="#">Inicio</a>
-            <a href="#">Sobre mí</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Contacto</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
             <label for="check" class="esconder-menu">&#215;</label>
         </nav>
     </header>
@@ -43,14 +44,14 @@
                     <span>Marketing Digital</span>
                 </p>
                 <div class="botones">
-                    <a href="https://www.instagram.com/tuusuario" target="_blank" class="btn instagram"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="btn linkedin"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.instagram.com/max.gamboni" target="_blank" class="btn instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/maximiliano-gamboni" target="_blank" class="btn linkedin"><i class='bx bxl-linkedin' ></i></a>
                 </div>
             </div>
         </div>
     </section>
     <hr class="linea-seccion">
-    <section class="sobre-mi">
+    <section class="sobre-mi" id="sobre-mi">
         <div class="contenedor-sobre-mi">
             <h2>Sobre mí</h2>
             <p class="texto">
@@ -69,7 +70,7 @@
             <h2>Proyectos</h2>
         </div>
     </section>
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         <div class="contenedor-proyectos">
             <div class="proyecto">
                 <div class="imagen-proyecto">
@@ -83,7 +84,7 @@
                     <p class="habilidades">
                         <strong>Habilidades Aplicadas:</strong> Desarrollo web (HTML, CSS, PHP), Diseño de la interfaz de usuario, Optimización SEO, Trabajo en equipo, Presentaciones públicas.
                     </p>
-                    <a href="CV-Maximum.pdf" download class="btn descargar-cv">Ver Proyecto</a>
+                    <a href="https://humboldt.gob.ar" download class="btn descargar-cv" target="_blank">Ver Proyecto</a>
                 </div>
             </div>
     
@@ -100,7 +101,7 @@
                     <p class="habilidades">
                         <strong>Habilidades Aplicadas:</strong> Investigación histórica, Gestión de proyectos tecnológicos en entornos culturales, Trabajo en equipo.
                     </p>
-                    <a href="CV-Maximum.pdf" download class="btn descargar-cv">Ver Proyecto</a>
+                    <a href="https://sites.google.com/view/museohistoricohumboldt/actividades?authuser=0" download class="btn descargar-cv" target="_blank">Ver Proyecto</a>
                 </div>
             </div>
         </div>
@@ -108,7 +109,7 @@
     </section>
     <hr class="linea-seccion"> <!-- Línea divisoria -->
 
-    <section class="habilidades">
+    <section class="habilidades" id="habilidades">
     <div class="contenedor-habilidades">
         <h2>Mis Habilidades</h2>
         <div class="accordion" id="accordionHabilidades">
@@ -184,39 +185,44 @@
         </div>
     </div>
     </section>
-    <hr class="linea-seccion"> <!-- Línea divisoria -->
+    <hr class="linea-seccion"> 
     <section id="contacto">
         <div class="contact-container">
             <h2>Contacto</h2>
             <p class="intro-text">Podes contactarme a través de los siguientes medios:</p>
 
             <div class="contact-info">
-                <!-- Correo Electrónico -->
                 <p>
                     <strong>Correo Electrónico:</strong> 
                     <a href="mailto:tuemail@example.com">maximilianogamboni@gmail.com
                     </a>
                 </p>
-
-                <!-- Teléfono -->
                 <p>
                     <strong>Teléfono:</strong> 
                     <a href="tel:+5493496556735">+54 9 3496 55-6735</a>
                 </p>
-
-                <!-- WhatsApp -->
                 <p>
                     <strong>WhatsApp:</strong> 
-                    <a href="https://wa.me/5493496556735" target="_blank">+1 234 567 89</a>
+                    <a href="https://wa.me/5493496556735" target="_blank">Clic para acceder</a>
                 </p>
             </div>
         </div>
     </section>
+    <button id="scrollToTop" class="scroll-to-top"><i class='bx bxs-up-arrow'></i></button>
+    <footer id="footer">
+        <div class="footer-container">
+            <p>Maximiliano Emanuel Gamboni</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/maximiliano-gamboni" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/max.gamboni" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
     
 
     
 
-    
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
