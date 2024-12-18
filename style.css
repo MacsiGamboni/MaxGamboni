@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(AGRANDIR.ttf);
+}
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat-ExtraBold.ttf);
+}
+body{
+    background-color: #F2F2F2;
+}
+header {
+    height: 100px;
+    background-color: #0540F2;
+    padding: 0 50px;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-transform: uppercase;
+    color: #F2F2F2;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "titulo";
+}
+
+.menu a {
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: color 0.4s, background-color 0.4s;
+    font-family: "titulo";
+}
+
+.menu a:hover {
+    background-color: #26A62F;
+    color: #F2F2F2;
+    border-radius: 5px;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    transform: scale(1.1);
+    color: #26A62F;
+}
+
+#check {
+    display: none;
+}
+/* Sección de presentación */
+.presentacion {
+    display: flex;
+    justify-content: center; 
+    padding: 50px 20px;
+}
+
+.contenedor-presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0554F2;
+    color: #F2F2F2; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 150px;
+    height: 300px;
+    object-fit: cover; 
+    display: block;
+    margin-left: 60px;
+}
+
+.info {
+    flex: 1;
+    padding: 70px;
+    text-align: center; 
+
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: "titulo";
+}
+
+.profesiones {
+    font-size: 1.1rem;
+    font-family: "poppins";
+}
+
+.profesiones span {
+    margin: 0 5px;
+}
+.profesiones-m {
+    font-size: 1.1rem;
+    font-family: "poppins";
+    display: none;
+}
+
+.profesiones-m span {
+    margin: 0 5px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+.btn {
+    text-decoration: none;
+    color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    padding: 10px 20px;
+    margin: 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #26A62F;
+    color: #F2F2F2;
+}
+.btn i {
+    font-size: 25px; 
+    vertical-align: middle; 
+}
+/* Línea entre secciones */
+.linea-seccion {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+}
+/* Sobre mi */
+.sobre-mi {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.contenedor-sobre-mi {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #0554F2;
+    margin-bottom: 10px;
+    font-family: "titulo";
+}
+
+.texto {
+    font-size: 1.1rem;
+    font-family: "poppins";
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.descargar-cv {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #26A62F;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    font-family: "Montserrat";
+}
+
+.descargar-cv:hover {
+    background-color: #1a7e1a;
+}
+.proyectos {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.contenedor-proyectos {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.proyecto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 48%; 
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-proyecto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.informacion-proyecto {
+    padding: 20px;
+}
+
+.informacion-proyecto h3 {
+    font-size: 1.8rem;
+    color: #0554F2;
+    margin-bottom: 15px;
+    font-family: "titulo";
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: "poppins";
+}
+
+.habilidades {
+    font-size: 1rem;
+    color: #555;
+    font-family: "poppins";
+}
+
+.habilidades strong {
+    color: #0554F2;
+}
+
+
+.habilidades {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contenedor-habilidades {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accordion-button {
+    background-color: #0554F2;
+    color: #26A62F;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    border-color: #0554F2;
+    box-shadow: 0 0 0 0.25rem rgba(0, 86, 242, 0.25);
+}
+
+.accordion-body {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button.collapsed {
+    background-color: #f8f9fa;
+}
+
+.accordion-button:hover {
+    background-color: #F2F2F2;
+}
+#contacto {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #0554F2;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #0540F2;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 100px;
+        z-index: 100;
+        transition: right 0.6s ease;
+    }
+
+    .menu a {
+        display: block;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .contenedor-presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor-presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    .foto img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .info {
+        padding: 20px;
+    }
+
+    .info h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .profesiones{
+        display: none;
+    }
+    .profesiones-m {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 1rem;
+    }
+
+    .profesiones-m  span {
+        margin: 0;
+        padding: 5px 0;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .profesiones-m  span:last-child {
+        border-bottom: none;
+    }
+
+    .contenedor-proyectos {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .proyecto {
+        width: 100%; 
+    }
+
+    .imagen-proyecto img {
+        max-height: 200px; 
+    }
+}
